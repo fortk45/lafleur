@@ -1,0 +1,853 @@
+/* Police Amatic SC */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+/* Police Belgrano */
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Amatic SC';
+
+}
+h2{
+    font-family: 'Amatic SC';
+
+}
+
+
+header{
+    width: 100%;
+    height: 10%;
+    font-family: 'Amatic SC';
+
+}
+
+main{
+    width: 100%;
+    height: 90%;
+    margin-bottom: 10%;
+}
+
+footer{
+    width: 100%;
+    height: 10%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+/* Disposition de la navbar */
+
+
+#navbar{
+
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 7vw;
+
+    border-bottom: solid 1px black;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    font-family: 'Amatic SC';
+}
+
+#navbar a{
+
+    text-decoration: none;
+}
+#navbar li{
+
+    font-size: 3vw;
+    color: #404040;
+}
+
+#navbar img{
+    width: 6vw;
+}
+
+@media screen and (max-width: 600px) {
+    #navbar{
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        gap: 7vw;
+        border-bottom: solid 1px black;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-family: 'Amatic SC';
+    }
+
+    #navbar a li{
+        font-size: 8vw;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    #navbar{
+        z-index: 1;
+        background-color: white;
+        position: fixed;
+        top:0px;
+    }
+    main {
+        margin-top: 5%;
+    }
+}
+
+main #title{
+    font-family: 'Belgrano', serif;
+    font-size: 4vw;
+    color: #404040;
+}
+
+.green{
+    color: #88B494;
+}
+
+.mainContainer{
+    margin-top: 7vh;
+    position: relative;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    text-align: center;
+
+}
+
+
+
+.bo{
+    /* border: solid 1px green; */
+    position: absolute;
+    top: 10%;
+    right: 27%;
+}
+
+.imgHome img{
+    /* border: solid 1px black; */
+    width: 20vw;
+}
+
+@media screen and (max-width: 600px) {
+    .hidden-phone{
+        /* border: solid 1px black; */
+        visibility: hidden;
+    }
+
+    .mainContainer{
+        margin-top: 30%;
+        position: relative;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    
+        text-align: center;
+    
+    }
+
+    main #title{
+        font-family: 'Belgrano', serif;
+        font-size: 3vh;
+        color: #404040;
+    }
+    
+  }
+
+.mainContainer > div {
+    /* border: 1px solid blue; */
+    width: 49%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.mainContainer input {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 30px;
+    width: 30%;
+    padding-left: 1vw;
+    
+}
+
+form input[type="text"]{
+    vertical-align: middle;
+    padding-right: 50px;
+    height: 4vw;
+    width: 30%;
+}
+
+@media screen and (max-width: 600px) {
+    form input[type="text"]::placeholder{
+        width: 200%;
+        font-size: 80%;
+    
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    form input[type="text"]::placeholder{
+        width: 200%;
+        font-size: 100%;
+    
+    }
+  }
+
+
+.buttonSubmitArrow{
+    background-color: transparent;
+    border: none;
+}
+
+.arrowButton{
+    
+    border-radius: 25px;
+    border: none;
+    width: 4vw;
+    height: 4vw;
+    background-color: #88B494;
+    vertical-align: middle;
+    margin-left: -4vw;
+
+}
+
+
+#buttonBonsail{
+    background-color: transparent;
+    padding: 1vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    border: none;
+    border-radius: 30px;
+    width: 50%;
+    font-family: 'Amatic SC';
+    font-size: 3vw;
+    margin-right: 20vw;
+
+
+}
+
+
+#footer {
+    position: fixed;
+    bottom: 0;
+
+    width: 90%;
+    margin-left: 5%;
+    background-color: white;
+    border-top: solid black 1px;
+
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+#footer div{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    gap: 2vw;
+    font-size: 1rem;
+}
+
+#footer li{
+    color: #404040;
+
+}
+#footer a{
+    color: #404040;
+    text-decoration: none;
+    font-size: 2.4vw;
+}
+
+footer img{
+    width: 6vw;
+}
+
+
+/* PROFIL */
+#profilRectangle{
+    width: 60vw;
+    height: 70vh;
+    margin: auto;
+    position: relative;
+    background: #88B494;
+    border-radius: 180px 0px;
+    margin-top: 5vw;
+}
+
+#profilRectangle >img{
+    width: 7vw;
+    position: absolute;
+
+}
+
+@media screen and (max-width: 600px) {
+    #profilRectangle >img{
+        width: 15vw;
+        position: absolute;
+    
+    }
+  }
+
+
+#profilRectangle >img:first-child{
+    
+    top: 50px;
+    left: 70px;
+    
+}
+
+
+#profilRectangle >img:last-child{
+  
+
+    right: 70px;
+    bottom: 50px;
+    
+}
+
+
+#identificationPannel>input{
+    height: 10%;
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.2em;
+    font-family: arial;
+    padding-left: 10px;
+}
+
+#identificationPannel>button{
+    height: 10%;
+    width: 15%;
+    border-radius: 20px;
+    border: none;
+    background-repeat: no-repeat;
+    background-image: url(../icons/arrow.png);
+    background-position: center center;
+    background-size: 50%;
+    
+    
+}
+
+
+#identificationPannel{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+
+    height: 80%;
+    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Amatic SC';
+    gap: 30px;
+
+}
+
+
+
+/* SHOP */
+
+#navCategories{
+    margin: 10vh auto auto auto;
+    width: 70%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px 20px 20px 20px;
+    border-radius: 30px;
+
+}
+
+#navCategories ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 2.5vh;
+}
+
+#navCategories ul li{
+    font-family: 'Amatic SC';
+    font-size: 1.7em;
+    background-color: #88B494;
+    width: 15vw;
+    text-align: center;
+    border-radius: 30px;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+   
+}
+
+@media screen and (max-width: 600px) {
+    #navCategories ul li{
+    font-family: 'Amatic SC';
+    font-size: 8vw;
+    background-color: #88B494;
+    width: 30vw;
+    text-align: center;
+    border-radius: 30px;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+}
+  }
+
+
+
+.rechercheShop{
+    position: relative;
+    margin-top: 5vh;
+    margin-left: 13vw;
+    width: 25vw;
+    height: 7vh;
+
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    .rechercheShop{
+        position: relative;
+        margin-top: 5vh;
+        margin-left: 13vw;
+        width: 40vw;
+        height: 7vh;
+    
+        display: flex;
+    }
+  }
+
+.rechercheShop>input{
+    width: 100%;
+    border: none;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.rechercheShop>button{
+    height: 100%;
+    width: 30%;
+    border-radius: 30px;
+    border: none;
+
+    background-repeat: no-repeat;
+    background-image: url(../icons/arrow.png);
+    background-position: center center;
+    background-size: 50%;
+    background-color: #88B494;
+    
+
+    position: absolute;
+    left: 70%;
+}
+
+#shop{
+    margin-top: 5%;
+    width: 80%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5em;
+    align-content: center;
+    align-items: center;
+    
+}
+.card{
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    width: 25%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    
+    text-align: center;
+
+    
+}
+
+@media screen and (max-width: 900px) {
+    .card{
+        position: relative;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+    
+        width: 44%;
+        height: fit-content;
+    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        
+        text-align: center;
+    
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card{
+        position: relative;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+    
+        width: 100%;
+        height: fit-content;
+    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        
+        text-align: center;
+    
+        
+    }
+}
+
+
+
+ .card img{
+    width: 100%;
+    height: 350px;
+    border-radius: 30px;
+}
+
+.card>h2{
+    width: 100%;
+    height: 10%;
+    border-radius: 30px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    font-size: 2em;
+}
+
+.card>p{
+    width: 90%;
+    height: 10%;
+    overflow: hidden;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+}
+
+.card>form{
+    width: 100%;
+    height: 20%;
+}
+
+.card>form>button{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: none;
+    background-color: #88B494;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Amatic SC';
+    font-size: 2.5vw;
+} 
+
+
+@media screen and (max-width: 600px) {
+    .card>form>button{
+        font-size: 8vw;
+    } 
+    .card img{
+        width: 100%;
+        height: 250px;
+        border-radius: 30px;
+    }
+    .card>h2{
+
+        font-size: 9vw;
+    }
+}
+
+#containerDetail{
+    width: 80%;
+    margin: auto;
+    margin-top: 5vw;
+    font-size: 2vw;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;}
+
+@media screen and (max-width: 600px) {
+    .rowPhone{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+    }
+}
+
+
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 7vw;
+}
+
+.leftDetail{
+    width: 50%;
+}
+
+.rightDetail{
+    width: 50%;
+}
+
+.rightDetail>img{
+    width: 80%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: solid #88b4946e;
+    padding: 2%;
+
+}
+
+.desc{
+    width: 80%;
+
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.whiteBox{
+background-color: white;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+width: 12vw;
+font-size: 2rem;
+text-align: center;
+}
+
+.greenBox{
+    margin-left: -40px;
+    width: 5vw;
+    background-color: #88B494;
+    border-radius: 30px 30px 30px 0px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .greenBox{
+        margin-left: -20px;
+
+    }
+
+    .whiteBox{
+        width: 20vw;
+        height: 2vh;
+        padding: 1.5vh 0 1.5vh 0;
+
+    }
+
+    .greenBox{
+        width: 8vw;
+        height: 2vh;
+        padding: 1.5vh 0 1.5vh 0;
+
+    }
+
+    .desc{
+        font-size: 3vw;
+        width: 100%;
+    }
+    .rightDetail{
+        width: 90%;
+    }
+    .rightDetail>img{
+        width: 90%;
+        padding: 5%;  
+    }
+}
+
+
+#containerPanier{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 6vh;
+    margin: auto;
+    margin-top: 10vh;
+    color: black;
+    font-family: 'Amatic SC';
+
+}
+
+.rowPanier *{
+    border-radius: 30px;
+}
+
+.rowPanier {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    position: relative;
+    height: 20vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    
+
+}
+
+
+.greenPart{
+    background-color: #88B494;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10%;
+
+}
+.columnPanier{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+
+    margin: auto;
+}
+
+.greenPart>img{
+    
+    margin-left: 5%;
+    height: 90%;
+}
+
+.descPart{
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    width: 70%;
+    text-align: center;
+}
+
+.descPart p{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+@media screen and (max-width: 600px) {
+    .rowPanier {
+        width: 90%;
+    }
+    .descPart{
+        font-size: 1.5vh;
+    }
+}
+
+
+.numberPart{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.validatePart{
+    border-radius: 30px 30px 30px 0px;
+    padding: 10px;
+    background-color: #88B494;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: black;
+    
+}
+
+.validatePart:hover{
+    background-color: red;
+}
